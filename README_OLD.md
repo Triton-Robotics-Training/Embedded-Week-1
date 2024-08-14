@@ -31,7 +31,17 @@ It is very much so garbage random data, but we will be working with data that ho
   
   For example, at time 4.34s, we can see that this voltage is 1.935V. The board can read this to a certain level of accuracy. If we want to read a non-binary value from the environment, this is how that is done sometimes.
 
-# 
+## PWM (Pulse Width Modulation)
+
+PWM is a type of protocol used with binary digital signals. It is used to simulate an analog output with a digital. We simply control how long the signal is high.
+
+The duty cycle of a PWM is the data you are sending, in the form of a percentage high.
+
+![](assets/week2_1.png)
+
+This week, you will do a very simple PWM during Exercise 2. It uses a very basic PWM signal generator to control the LED. 
+
+PWM is used to control servos and some motors, but we specifically don't use PWM very much anymore, as we have switched to all CAN control for the motors we use.
 
 # Exercise 1: Using Digital Signals
 
@@ -95,3 +105,4 @@ You can add a [potentiometer](https://randomnerdtutorials.com/electronics-basics
 ## Assignment
 
 Using a potentiometer, have an led flicker with a period of 2s, and be on for that percentage of time (Ex: at 0.3 it will be on 30% of the time, which is 0.6 seconds, and off 70% of the time, 1.4 seconds). `wait_ms(milliseconds)` might come in handy here. Again, once you're done, put this on gituhub and push.
+
