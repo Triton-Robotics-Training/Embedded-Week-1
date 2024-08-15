@@ -41,7 +41,7 @@ The duty cycle of a PWM is the data you are sending, in the form of a percentage
 
 This week, you will do a very simple PWM during Exercise 2. It uses a very basic PWM signal generator to control the LED. 
 
-PWM is used to control servos and some motors, but we specifically don't use PWM very much anymore, as we have switched to all CAN control for the motors we use.
+PWM is used to control servos and some motors, but we specifically don't use PWM very much anymore, as we have switched to all CAN control for the motors we use. You'll learn about CAN control in week 2.
 
 # Exercise 1: Using Digital Signals
 
