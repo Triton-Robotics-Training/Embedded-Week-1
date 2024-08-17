@@ -8,6 +8,7 @@ int main() {
         led = !led;
         printf("Blink! LED is now %d\n", led.read());
 
+        // MAKE SURE THERE IS ALWAYS A WAIT ON THE SIM OR IT WILL CRASH
         wait_ms(500);
     }
 }
