@@ -1,0 +1,6 @@
+Question 1: Explain the difference between analog and digital signals.
+
+Question 2: Give an example of something that uses digital signals.
+
+Question 3: Give an example of something that uses analog signals.
+

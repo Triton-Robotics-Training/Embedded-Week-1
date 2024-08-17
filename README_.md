@@ -33,7 +33,7 @@ For example, at time 4.34s, we can see that this voltage is 1.935V. The board ca
 
 # PWM (Pulse Width Modulation)
 
-PWM is a type of protocol used with binary digital signals. It is used to simulate an analog output with a digital. We simply control how long the signal is high. You may see similarities to Exercise 2 from last week.
+PWM is a type of protocol used with binary digital signals. It is used to simulate an analog output with a digital. We simply control how long the signal is high.
 
 The duty cycle of a PWM is the data you are sending, in the form of a percentage high.
 
@@ -41,7 +41,9 @@ PWM is a crude way to mimic an analog signal using a digital one, however this a
 
 ![img](assets/week2_1.png)
 
-PWM as a protocol is also used to control servos and some brushless motor controllers, but we specifically don't use PWM very much anymore, as we have switched to all CAN control for the motors we use.
+This week, you will do a very simple PWM during Exercise 2. It uses a very basic PWM signal generator to control the LED. 
+
+PWM as a protocol is also used to control servos and some brushless motor controllers, but we specifically don't use PWM very much anymore, as we have switched to all CAN control for the motors we use. You'll learn about CAN control in week 2.
 
 # Exercise 1: Using Digital Signals
 
@@ -105,3 +107,4 @@ You can add a [potentiometer](https://randomnerdtutorials.com/electronics-basics
 ## Assignment
 
 Using a potentiometer, have an led flicker with a period of 2s, and be on for that percentage of time (Ex: at 0.3 it will be on 30% of the time, which is 0.6 seconds, and off 70% of the time, 1.4 seconds). `wait_ms(milliseconds)` might come in handy here. Again, once you're done, put this on gituhub and push.
+
