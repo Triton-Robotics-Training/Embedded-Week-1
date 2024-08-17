@@ -25,19 +25,29 @@ It is very much so garbage random data, but we will be working with data that ho
 
 ## Analog Signals
 
-- Analog signals are signals that are meant to be interpreted in terms of a range.
-  
-  ![](assets/week1_2.png)
-  
-  For example, at time 4.34s, we can see that this voltage is 1.935V. The board can read this to a certain level of accuracy. If we want to read a non-binary value from the environment, this is how that is done sometimes.
+Analog signals are signals that are meant to be interpreted in terms of a range.
 
-# 
+![](assets/week1_2.png)
+
+For example, at time 4.34s, we can see that this voltage is 1.935V. The board can read this to a certain level of accuracy. If we want to read a non-binary value from the environment, this is how that is done sometimes.
+
+# PWM (Pulse Width Modulation)
+
+PWM is a type of protocol used with binary digital signals. It is used to simulate an analog output with a digital. We simply control how long the signal is high. You may see similarities to Exercise 2 from last week.
+
+The duty cycle of a PWM is the data you are sending, in the form of a percentage high.
+
+PWM is a crude way to mimic an analog signal using a digital one, however this aspect of PWM is generally only used with leds and motors, as they will work
+
+![img](assets/week2_1.png)
+
+PWM as a protocol is also used to control servos and some brushless motor controllers, but we specifically don't use PWM very much anymore, as we have switched to all CAN control for the motors we use.
 
 # Exercise 1: Using Digital Signals
 
-The mbed library allows us to very easily manipulate digital inputs and outputs. You can experiment with this using the [ARM mbed Simulator](http://195.130.59.221/). 
+The mbed library allows us to very easily manipulate digital inputs and outputs. You can experiment with this using the [ARM mbed Simulator](http://195.130.59.221/).
 
-Creating a digital Input can be done using the `DigitalIn` Class. It is constructed as such: 
+Creating a digital Input can be done using the `DigitalIn` Class. It is constructed as such:
 
 ```cpp
 DigitalIn input(PinName);
