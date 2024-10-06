@@ -85,7 +85,7 @@ output = 1; // setting the output high
 
 ## Assignment
 
-WIth this information, write a simple program in the simulator that controls the LED with the button. The led pin is `LED1` and the button pin is `BUTTON1`. You can play around with this by pressing the button in the simulator. Once your code is functional, copy it back into the file on github, and then push.
+WIth this information, write a simple program in the simulator that binds the LED directly to the button. If the button is pressed, the LED should be on, and if the button is not pressed, the LED should be off. The led pin is `LED1` and the button pin is `BUTTON1`. You can play around with this by pressing the button in the simulator. Once your code is functional, copy it back into the file on github, and then push.
 
 # Exercise 2: Analog Input
 
@@ -106,5 +106,6 @@ You can add a [potentiometer](https://randomnerdtutorials.com/electronics-basics
 
 ## Assignment
 
-Using a potentiometer, have an led flicker with a period of 2s, and be on for that percentage of time (Ex: at 0.3 it will be on 30% of the time, which is 0.6 seconds, and off 70% of the time, 1.4 seconds). `wait_ms(milliseconds)` might come in handy here. Again, once you're done, put this on gituhub and push.
+Using a potentiometer, have an led flicker with a period of 2s, and be on for that percentage of time (Ex: at 0.3 it will be on 30% of the time, which is 0.6 seconds, and off 70% of the time, 1.4 seconds). `wait_ms(milliseconds)` might come in handy here. You can create a potentiometer by going to the "Add Components" button and going through the dropdown to potentiometer.
+Again, once you're done, put this on gituhub and push.
 
