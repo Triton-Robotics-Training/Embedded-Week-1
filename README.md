@@ -82,7 +82,10 @@ However now you can also set the value like a variable
 ```cpp
 output = 1; // setting the output high
 ```
-
+To initialize the button
+```cpp
+DigitalIn but1(BUTTON1);
+```
 ## Assignment
 
 WIth this information, write a simple program in the simulator that binds the LED directly to the button. If the button is pressed, the LED should be on, and if the button is not pressed, the LED should be off. The led pin is `LED1` and the button pin is `BUTTON1`. You can play around with this by pressing the button in the simulator. Once your code is functional, copy it back into the file on github, and then push.
